@@ -1,17 +1,13 @@
-color bgColor = color(0, 255, 0);
-float circleSize = 100;
+size(800, 600);
 
-void setup() {
-  size(800, 600, P2D); // P2D enables 2D GPU acceleration
-  background(bgColor);
-}
+ellipseMode(CENTER);
+rectMode(CENTER);
 
-void draw() {  
-  if (mousePressed) {
-    rectMode(CENTER);
-    fill(0, 127, 255);
-    stroke(255, 0, 0);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-    rect(mouseX, mouseY, circleSize, circleSize);
-  }
-}
+background(255, 255, 255);
+
+stroke(255, 127, 0);
+strokeWeight(20);
+fill(255, 127, 255);
+
+ellipse(width/2, height/2, 70, 60);
+rect(100, 300, 200, 200);
